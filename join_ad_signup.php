@@ -11,7 +11,6 @@ $ad_phone=$_POST['ad_phone'];
 $ad_gender=$_POST['ad_gender'];
 $admin_id=$_POST['admin_id'];
 $admin_user_name=$_POST['admin_user_name'];
-
 $ad_password=$_POST['ad_password'];
 
 $ad_repeat=$_POST['ad_repeat'];
