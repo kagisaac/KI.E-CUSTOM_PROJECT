@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>js pro</title>
+    <script>
+        function show_alert()
+        {
+            alert("enter your name mine while ")
+        }
+       
+        function show_prompt()
+        {
+            var name=prompt("enter your name mine while")
+
+            if(name!=null && name!="")
+            {
+                document.write("Hello "+name+" how are you today?");
+            }
+            else {
+                document.write("hey they your unknown");
+            }
+        }
+        function listing()
+        {
+            var i=0
+            while(i<=5){
+                document.write(i);
+                i++;
+            }
+        }
+        var x;
+            var mycars= new Array();
+            mycars[0]="saab"; 
+            mycars[1]="volvo";
+            mycars[2]="BMW";
+         function validate_form(thisform)
+         {
+            with(thisform){
+                if(validate_required(email"email must be filled out!")==false)
+            }
+         }
+
+       
+    </script>
+
+</head><body>
+    <script>
+        var fname = "alex"
+        var lnamw = "kaka"
+        document.write(fname+lnamw)
+    </script>
+                <input type="button" onclick="show_prompt()" value="show prompt"/>
+
+        <input type="button" onclick="show_alert()" value="show alert"/>
+        <script>
+            var i=0
+            while(i<=5){
+                document.write(i);
+                i++;
+            }
+           
+            for(x in mycars){
+                document.write(mycars[x]+"<br>");} 
+ </script>
+        
+    </body>
+    </html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+    <style>
+      input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      
+      input[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+      input[type=reset]:hover {
+        background-color: #45a049;
+      }
+      div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+      input[type=text]:focus {
+    background-color: lightblue;
+  }
+  
+      </style>
+
+  </head>
+ 
+<body style="background-color:rgb(232, 234, 173)">
+
+  
+
+<p><strong>Fill the form to Submit import & export document for tax calculation </strong><hr><br></p>
+
+<p background-color="powder blue">
+<form action="join_ad_service.php" method="post"><ul>
+  <il><label for="fname">form ID:</label>
+    <input type="int" id="service_id" name="service_id" value=""><br></il><br>
+<il><label for="fname">Goods arrival:</label>
+  <input type="file" id="arrival_goods" name="arrival_goods" value="Goods arrival"><br></il><br>
+  
+  <il><label for="fname"> declaretion payment recipt:</label>
+    <input type="file" id="decl_payment_recpt" name="decl_payment_recpt" value="exit note"><br></il><br>
+
+    <il><label for="fname">Release note:</label>
+        <input type="file" id="exit_note" name="exit_note" value="exit note"><br></il><br>
+  
+       <il><label for="fname"> delivery payment recipt:</label>
+    <input type="file" id="delivery_pay_recpt" name="delivery_pay_recpt" value="exit note"><br></il><br>
+    
+      
+  <input type="submit" name="service_sub" value="send">
+  
+</form> 
+
+
+</body>
+</html>
+

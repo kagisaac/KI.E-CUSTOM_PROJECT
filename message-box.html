@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.time-left {
+  float: left;
+  color: #999;
+}
+</style>
+</head>
+<body style="background-color:rgb(232, 234, 173)">
+
+
+<h2>Chat Messages</h2>
+
+<div class="container">
+    <img src="shipping-img.JPG" alt="Avatar" style="width:100%;">
+    <p>Hello. How are you today? <br>this is notice of arrival of the goods (avis d'arrivee)</p>
+    <span class="time-right">11:00</span>
+  </div>
+  
+<div class="container darker">
+  <img src="background-pic.jpg" alt="Avatar" class="right" style="width:100%;">
+  <p align="right">Hey! I'm fine. Thanks for asking! <br>i have attached my arrival notice for verification by Rwanda bureau of standards</p>
+  <input type="file" id="arrival-notice" name="arrival-notice" value=""/>
+  <span class="time-left" align="right">11:01</span>
+</div>
+
+<div class="container">
+    <img src="shipping-img.JPG" alt="Avatar" style="width:100%;">
+    <p>ok now your good to go !!</p>
+    <a href="input-decleration.html">click the link to start your declaretion process</a>
+    <span class="time-right">11:02</span>
+</div>
+
+<div class="container">
+    <img src="shipping-img.JPG" alt="Avatar" style="width:100%;">
+    <p>the declaretion has succefuly completed well now you can paye your tax</p>
+    <a href="payement-page.html">click the link to paye tax</a>
+    <span class="time-right">11:02</span>
+</div>
+
+<div class="container">
+    <img src="shipping-img.JPG" alt="Avatar" style="width:100%;">
+    <p>tax payement has succefuly completed here is the an invoice for warehouse handling fees you can paye it via the link below </p>
+<input type="file" id="warehouse-invoice" name="warehouse-invoice" value="">
+    <a href="payement-page.html">click the link to paye tax</a>
+    <span class="time-right">11:02</span>
+</div>
+<div class="container">
+    <img src="shipping-img.JPG" alt="Avatar" style="width:100%;">
+    <p>warehouse  payement has succefuly completed.<br> attached document is your goods exit note </p>
+<input type="file" id="goods-exit-note" name="goods-exit-note" value="">
+    <span class="time-right">11:02</span>
+</div>
+<div class="container">
+    <img src="shipping-img.JPG" alt="Avatar" style="width:100%;">
+    <p>Now the final step is to apply for your home delivery of your goods </p>
+<input type="file" id="warehouse-invoice" name="warehouse-invoice" value="">
+    <a href="delivery.html">click the link to apply for home delivery</a>
+    <span class="time-right">11:02</span>
+</div>
+<div class="container">
+    <img src="shipping-img.JPG" alt="Avatar" style="width:100%;">
+    <p>your application of home delivery has been received <br>Now you can paye the below attached invoice for a delivery fees  </p>
+<input type="file" id="delivery-invoice" name="delivery-invoice" value="">
+    <a href="payement-page.html">click the link to paye the delivery fee</a>
+    <span class="time-right">11:02</span>
+</div>
+<a href="payement-page.html">click the link to paye the delivery fee</a>
+
+</body>
+</html>

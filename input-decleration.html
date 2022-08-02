@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+    <style>
+      input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      
+      input[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+      input[type=reset]:hover {
+        background-color: #45a049;
+      }
+      div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+      input[type=text]:focus {
+    background-color: lightblue;
+  }
+  
+      </style>
+
+  </head>
+ 
+<body style="background-color:rgb(232, 234, 173)">
+
+  
+
+<p><strong>Fill the form to Submit import & export document for tax calculation </strong><hr><br></p>
+
+<p background-color="powder blue">
+<form action="join_input.php" method="post"><ul>
+  <il><label for="fname">form ID:</label>
+    <input type="int" id="form_id" name="form_id" value=""><br></il><br>
+<il><label for="fname">Goods invoice (original):</label>
+  <input type="file" id="goods-invoice" name="invoice" value=""><br></il><br>
+  
+  <il><label for="fname">Copy of goods invoice with RRA stamp RRA stamp is obtained at the point of entrry in the country:</label>
+    <input type="file" id="stamped_invoice" name="stamped_invoice" value=""><br></il><br>
+   
+    <il><label for="fname">Transport invoice (original):</label>
+      <input type="file" id="transport_invoice" name="transport_invoice" value=""><br></il><br>
+     
+      <il><label for="fname">Bill of ladding or Airway bill (original) (original + Simple copy)
+        copy should have RRA stamp obtained at the point of entry in Rwanda:</label>
+        <input type="file" id="airway_bill" name="airway_bill" value=""><br></il><br>
+        
+        <il><label for="fname">Packing list (original + Simple copy)
+            copy should have RRA stamp obtained at the point of entry in Rwanda (original):</label>
+            <input type="file" id="packing_list" name="packing_list" value=""><br></il><br>
+           
+            <il><label for="fname">T1 obtained from RRA at the point of entry in Rwanda:</label>
+              <input type="file" id="t1" name="t1" value=""><br></il><br>
+             
+              <il><label for="fname">Goods arrival notice with RBS stamp (original + Simple copy):</label>
+                <input type="file" id="arrival_notice" name="arrival_notice" value=""><br></il><br>
+          </ul>
+  <input type="submit" value="Submit"><input type="reset">
+  
+</form> 
+
+<p>If you change the input values and then click the "Reset" button, the form-data will be reset to the default values.</p>
+
+</body>
+</html>
+
