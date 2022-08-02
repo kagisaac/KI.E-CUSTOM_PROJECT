@@ -21,7 +21,7 @@ if($ad_password!=$ad_repeat){
 echo ("PASSWORD NOT MATCH");
 }
 else{
-    echo ('wow youve succesfully created an account');
+    echo ('wow youve succesfully created an account !');
     $ad_country=$_POST['ad_country'];
 
 
